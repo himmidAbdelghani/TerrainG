@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.TransportViewController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="722.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <Pane prefHeight="51.0" prefWidth="666.0" style="-fx-background-color: #4A536B;" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField layoutX="444.0" layoutY="13.0" prefHeight="25.0" prefWidth="119.0" promptText="rechecher" />
+                     </children>
+                  </Pane>
+               </top>
+               <left>
+                  <Pane fx:id="P_button" prefHeight="349.0" prefWidth="200.0" style="-fx-background-color: #4A536B;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane fx:id="title" layoutX="5.0" layoutY="-46.0" prefHeight="77.0" prefWidth="182.0" style="-fx-background-color: #373F55;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="48.0" layoutY="9.0" prefHeight="38.0" prefWidth="115.0" text="TRANSPORTS" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../mages/icons8-bus-24.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <VBox layoutX="-2.0" layoutY="2.0" prefHeight="404.0" prefWidth="200.0" style="-fx-background-color: #4A536B;">
+                           <children>
+                              <JFXButton fx:id="homebtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" onAction="#HomePage" prefHeight="29.0" prefWidth="200.0" text="HOME" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="9.0" right="9.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-home-page-48.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="associationbtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="15.0" onAction="#AssociationPage" prefHeight="29.0" prefWidth="200.0" text="ASSOCIATIONS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-association-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="9.0" right="9.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="terrainbtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="54.0" onAction="#TerrainPage" prefHeight="29.0" prefWidth="200.0" text="TERRAINS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-stadium-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="9.0" right="9.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="reservationbtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="93.0" onAction="#ReservationPage" prefHeight="29.0" prefWidth="200.0" text="RESERVATIONS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-tear-off-calendar-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="9.0" right="9.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="transbtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="132.0" onAction="#TransportPage" prefHeight="29.0" prefWidth="200.0" text="TRANSPORTS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-bus-24.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="9.0" right="9.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="254.0" prefHeight="29.0" prefWidth="200.0" text="OPTIONS" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-services-96.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="9.0" right="9.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="279.0" prefHeight="29.0" prefWidth="200.0" text="SAUVEGARDE" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-data-backup-96.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="9.0" right="9.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="50.0" top="50.0" />
+                           </padding>
+                        </VBox>
+                        <Pane layoutX="38.0" layoutY="514.0" prefHeight="50.0" prefWidth="116.0">
+                           <children>
+                              <Button fx:id="logoutbtn" mnemonicParsing="false" onAction="#cancelbtnOnAction" prefHeight="60.0" prefWidth="65.0" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                    <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-shutdown-96.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Label layoutX="55.0" layoutY="17.0" text="Quitter" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets bottom="1.0" top="8.0" />
+                           </opaqueInsets>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="349.0" prefWidth="535.0" style="-fx-background-color: #AED6DC;" BorderPane.alignment="CENTER">
+                     <children>
+                        <TableView fx:id="TransportTable" layoutX="369.0" layoutY="92.0" onMouseClicked="#senddataTrans" prefHeight="371.0" prefWidth="472.0" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="369.0" AnchorPane.rightAnchor="39.0">
+                           <columns>
+                              <TableColumn fx:id="idCol" maxWidth="1.7976931348623157E308" prefWidth="40.666656494140625" style="-fx-alignement: center;" text="id" visible="false" />
+                              <TableColumn fx:id="immatriculeCol" maxWidth="1.7976931348623157E308" prefWidth="112.33331298828125" style="-fx-alignement: center;" text="Immatricule" />
+                              <TableColumn fx:id="marqueCol" editable="false" maxWidth="1.7976931348623157E308" prefWidth="108.6666259765625" style="-fx-alignement: center;" text="Marque" />
+                              <TableColumn fx:id="modelCol" maxWidth="1.7976931348623157E308" prefWidth="146.0" style="-fx-alignement: center;" text="Model" />
+                              <TableColumn fx:id="DispoCol" maxWidth="1.7976931348623157E308" prefWidth="103.0" style="-fx-alignement: center;" text="Disponibilité" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="immatriculeTxt" alignment="CENTER" layoutX="158.0" layoutY="183.0" prefHeight="25.0" prefWidth="161.0" promptText="ex : J0000000" style="-fx-background-color: white; -fx-border-radius: 65px; -fx-background-radius: 65px;" />
+                        <TextField fx:id="marqueTXT" alignment="CENTER" layoutX="156.0" layoutY="232.0" prefHeight="25.0" prefWidth="161.0" promptText="ex : Ford" style="-fx-background-radius: 65px; -fx-background-color: white; -fx-border-radius: 65px;" />
+                        <TextField fx:id="modelTXT" alignment="CENTER" layoutX="158.0" layoutY="285.0" prefHeight="25.0" prefWidth="161.0" promptText="ex : 2009" style="-fx-background-color: white; -fx-background-radius: 65px; -fx-border-radius: 65px;" />
+                        <TextField fx:id="dispotransTXT" alignment="CENTER" layoutX="158.0" layoutY="334.0" prefHeight="25.0" prefWidth="161.0" promptText="'O' ou 'N'" style="-fx-background-color: white; -fx-background-radius: 65px; -fx-border-radius: 65px;" />
+                        <Label layoutX="45.0" layoutY="187.0" text="IMMATRICULE">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="45.0" layoutY="235.0" text="MARQUE">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="45.0" layoutY="288.0" text="MODEL">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="45.0" layoutY="337.0" text="DISPONIBILITE">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="369.0" layoutY="61.0" prefHeight="31.0" prefWidth="227.0">
+                           <children>
+                              <TextField alignment="CENTER" prefHeight="25.0" prefWidth="217.0" promptText="Rechercher un vehicule" style="-fx-background-radius: 65px; -fx-border-radius: 65px;" />
+                            
+                           </children>
+                        </Pane>
+                        <Button fx:id="loadbtn" layoutX="726.0" layoutY="60.0" mnemonicParsing="false" onAction="#loadbtnOnAction" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #4A536B;" text="Actualiser" textFill="WHITE" />
+                        <Pane layoutX="9.0" layoutY="427.0" prefHeight="39.0" prefWidth="360.0">
+                           <children>
+                              <Button fx:id="ajoutbtn" layoutX="20.0" layoutY="8.0" mnemonicParsing="false" onAction="#transports" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #4A536B;" text="Ajouter" textFill="WHITE" />
+                              <Button fx:id="updatebtn" layoutX="135.0" layoutY="8.0" mnemonicParsing="false" onAction="#transports" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #4A536B;" text="Modifier" textFill="WHITE" />
+                              <Button fx:id="deletebtn" layoutX="250.0" layoutY="8.0" mnemonicParsing="false" onAction="#transports" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #4A536B;" text="Supprimer" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                        <TextField fx:id="idtxt" alignment="CENTER" disable="true" editable="false" layoutX="156.0" layoutY="141.0" prefHeight="25.0" prefWidth="161.0" visible="false" />
+                     </children></AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

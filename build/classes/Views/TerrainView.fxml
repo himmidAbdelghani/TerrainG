@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.TerrainViewController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="722.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <Pane prefHeight="51.0" prefWidth="666.0" style="-fx-background-color: #4A536B;" BorderPane.alignment="CENTER" />
+               </top>
+               <left>
+                  <Pane fx:id="P_button" prefHeight="349.0" prefWidth="200.0" style="-fx-background-color: #4A536B;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button layoutX="74.0" layoutY="304.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                        <Pane fx:id="title" layoutX="10.0" layoutY="-48.0" prefHeight="42.0" prefWidth="182.0" style="-fx-background-color: #373F55;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="56.0" layoutY="2.0" prefHeight="40.0" prefWidth="115.0" text="TERRAINS" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="31.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../mages/icons8-stadium-50.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <VBox layoutX="1.0" layoutY="1.0" prefHeight="404.0" prefWidth="199.0" style="-fx-background-color: #4A536B;">
+                           <children>
+                              <JFXButton fx:id="homebtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" onAction="#HomePage" prefHeight="29.0" prefWidth="200.0" text="HOME" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="6.0" right="9.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-home-page-48.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="associationbtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="15.0" onAction="#AssociationPage" prefHeight="29.0" prefWidth="200.0" text="ASSOCIATIONS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-association-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="6.0" right="9.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="terrainbtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="54.0" onAction="#TerrainPage" prefHeight="29.0" prefWidth="200.0" text="TERRAINS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-stadium-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="6.0" right="9.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="reservationbtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="93.0" onAction="#ReservationPage" prefHeight="29.0" prefWidth="200.0" text="RESERVATIONS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-tear-off-calendar-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="6.0" right="9.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="transbtn" alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="132.0" onAction="#TransportPage" prefHeight="29.0" prefWidth="200.0" text="TRANSPORTS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-bus-24.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="6.0" right="9.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="254.0" prefHeight="29.0" prefWidth="200.0" text="OPTIONS" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-services-96.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="6.0" right="9.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="transbtn11" alignment="BASELINE_LEFT" graphicTextGap="24.0" layoutX="10.0" layoutY="279.0" prefHeight="29.0" prefWidth="200.0" text="SAUVEGARDE" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-data-backup-96.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="11.0" left="6.0" right="9.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="50.0" top="50.0" />
+                           </padding>
+                        </VBox>
+                        <Pane layoutX="40.0" layoutY="514.0" prefHeight="50.0" prefWidth="116.0">
+                           <children>
+                              <Button fx:id="logoutbtn" mnemonicParsing="false" onAction="#cancelbtnOnAction" prefHeight="60.0" prefWidth="65.0" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                    <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../mages/icons8-shutdown-96.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Label layoutX="58.0" layoutY="17.0" text="Quitter" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                            
+                           </opaqueInsets>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="349.0" prefWidth="535.0" style="-fx-background-color: #AED6DC;" BorderPane.alignment="CENTER">
+                     <children>
+                        <TableView fx:id="TerrainTable" layoutX="31.0" layoutY="88.0" onMouseClicked="#senddataTerains" onSort="#senddataTerains" prefHeight="195.0" prefWidth="814.0" AnchorPane.bottomAnchor="283.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="35.0">
+                           <columns>
+                              <TableColumn fx:id="idCol" editable="false" maxWidth="84.0" prefWidth="37.0" style="-fx-alignement: center;" text="id" visible="false" />
+                              <TableColumn fx:id="nomCol" editable="false" maxWidth="202.0" minWidth="0.0" prefWidth="166.66668701171875" style="-fx-alignement: center;" text="nom de terrain" />
+                              <TableColumn fx:id="adresseCol" editable="false" maxWidth="209.33331298828125" prefWidth="184.00006103515625" style="-fx-alignement: center;" text="adresse" />
+                              <TableColumn fx:id="superficieCol" editable="false" maxWidth="271.66668701171875" prefWidth="129.99993896484375" style="-fx-alignement: center;" text="superficie" />
+                              <TableColumn fx:id="dispoCol" editable="false" maxWidth="287.3333435058594" minWidth="0.0" prefWidth="143.6666259765625" style="-fx-alignement: center;" text="disponibilité" />
+                              <TableColumn fx:id="typeCol" editable="false" maxWidth="332.66668701171875" minWidth="0.0" prefWidth="152.33331298828125" style="-fx-alignement: center;" text="type de terrain" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="nomtxt" layoutX="123.0" layoutY="334.0" prefHeight="25.0" prefWidth="212.0" />
+                        <TextField fx:id="superficietxt" layoutX="468.0" layoutY="334.0" prefHeight="25.0" prefWidth="212.0" />
+                        <TextField fx:id="typetxt" editable="false" layoutX="406.0" layoutY="309.0" promptText="type terrain" visible="false" />
+                        <TextField fx:id="dispotxt" layoutX="470.0" layoutY="400.0" prefHeight="25.0" prefWidth="210.0" style="-fx-border-radius: 65px;" />
+                        <Label layoutX="43.0" layoutY="338.0" text="Nom Terrain">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="45.0" layoutY="377.0" text="Adresse">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="390.0" layoutY="338.0" text="Superficie">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="390.0" layoutY="371.0" text="Type Terrain">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="390.0" layoutY="406.0" text="Disponibilité">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        
+                        <Button fx:id="load" layoutX="747.0" layoutY="54.0" mnemonicParsing="false" onAction="#LoadbtnOnAction" prefHeight="25.0" prefWidth="91.0" text="load" />
+                        <Pane layoutX="151.0" layoutY="453.0" prefHeight="39.0" prefWidth="634.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="95.0">
+                           <children>
+                              <Button fx:id="ajoutbrn" layoutX="94.0" layoutY="7.0" mnemonicParsing="false" onAction="#TerrainsAction" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #4A536B;" text="Ajouter" textFill="WHITE" />
+                              <Button fx:id="updatebtn" layoutX="267.0" layoutY="7.0" mnemonicParsing="false" onAction="#TerrainsAction" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #4A536B;" text="Modifier" textFill="WHITE" />
+                              <Button fx:id="deletebtn" layoutX="445.0" layoutY="7.0" mnemonicParsing="false" onAction="#TerrainsAction" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #4A536B;" text="Supprimer" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                        <ComboBox fx:id="comboT" layoutX="470.0" layoutY="367.0" prefHeight="25.0" prefWidth="210.0" />
+                        <TextArea fx:id="adressetxt" layoutX="123.0" layoutY="371.0" prefHeight="54.0" prefWidth="212.0" />
+                        <PasswordField fx:id="ID" editable="false" layoutX="123.0" layoutY="309.0" prefHeight="25.0" prefWidth="23.0" promptText="ID" visible="false" />
+                     </children></AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TerrainG.jnlp">
+  <information>
+    <title>TerrainG</title>
+    <vendor>Hp</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TerrainG.jar" size="4836705" download="eager" />
+    <jar href="lib\GMapsFX-11.0.6.jar" size="217348" download="eager" />
+    <jar href="lib\com.mysql.jdbc_5.1.5.jar" size="676712" download="eager" />
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\javafx-swt.jar" size="37123" download="eager" />
+    <jar href="lib\javafx.base.jar" size="752293" download="eager" />
+    <jar href="lib\javafx.controls.jar" size="2547923" download="eager" />
+    <jar href="lib\javafx.fxml.jar" size="129499" download="eager" />
+    <jar href="lib\javafx.graphics.jar" size="4261222" download="eager" />
+    <jar href="lib\javafx.media.jar" size="277696" download="eager" />
+    <jar href="lib\javafx.swing.jar" size="88809" download="eager" />
+    <jar href="lib\javafx.web.jar" size="727226" download="eager" />
+    <jar href="lib\jcalendar-1.4.jar" size="165052" download="eager" />
+    <jar href="lib\jfoenix-8.0.1.jar" size="2405715" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="home.Main"  name="TerrainG" />
+  <update check="always"/>
+</jnlp>

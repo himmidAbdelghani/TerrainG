@@ -1,0 +1,25 @@
+.immatriculeTxt {
+ position: absolute;
+width: 400.1px;
+height: 84.46px;
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 65px;   
+}
+
+.terrainbtn{
+     -fx-background-color:#0066cc;
+    -fx-border-color: #0066cc ;
+    -fx-border-width: 2px 2px 2px 2px ;
+    -fx-border-radius: 20px ;
+    -fx-background-radius: 20px ;
+    -fx-border-style: solid;   
+}
+.root{
+    -fx-background-color: #AED6DC;
+     -fx-border-radius: 20px ;
+    -fx-background-radius: 20px ;
+}
+.button {
+
+}
